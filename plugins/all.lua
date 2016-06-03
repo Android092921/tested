@@ -49,7 +49,7 @@ local function show_group_settings(target)
     end
   end
   local settings = data[tostring(target)]['settings']
-  local text = "Lock group name : "..settings.lock_name.."\nقفل اعضای گروه : "..settings.lock_photo.."\nقفل عکس گروه : "..settings.lock_member.."\nحساسیت فلود : "..NUM_MSG_MAX
+  local text = "قفل اسم گروه : "..settings.lock_name.."\nقفل عکس گروه : "..settings.lock_photo.."\nقفل اعضای گروه : "..settings.lock_member.."\nحساسیت فلود : "..NUM_MSG_MAX
   return text
 end
 
