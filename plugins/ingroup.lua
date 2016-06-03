@@ -57,7 +57,7 @@ local function check_member_realm_add(cb_extra, success, result)
       end
       data[tostring(realms)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-      return send_large_msg(receiver, 'Realm has been added!')
+      return send_large_msg(receiver, 'ریالم ادد شد')
     end
   end
 end
@@ -184,7 +184,7 @@ end
 --End Check Member
 local function show_group_settingsmod(msg, data, target)
  	if not is_momod(msg) then
-    	return "For moderators only!"
+    	return "مقامات بالاتر از شما این توانایی را دارند"
   	end
   	local data = load_data(_config.moderation.data)
     if data[tostring(msg.to.id)] then
